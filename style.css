@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+.probe {
+  height: 200vh;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1a1a1a;
+  font-family: "Inter", sans-serif;
+  --text-color: #ddd;
+  color: #fff;
+  --primry-color: #ff3030;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 5rem;
+  font-size: 0, 8rem;
+  text-align: center;
+}
+
+.nav-item {
+  text-decoration: none;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0, 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero {
+  height: calc(100vh - 5rem);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),
+    url(./fotos/hero.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.title {
+  font-size: 3rem;
+  line-height: 3rem;
+  margin: 0 0 16px;
+  font-family: "Lobster", sans-serif;
+}
+.subtitle {
+  margin: 0;
+  color: #ddd;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.hero-action-button {
+  width: fit-content;
+  padding: 1rem 2rem;
+  margin-top: 60px;
+  border: 1px solid var(--primry-color);
+  color: #fff;
+  background-color: #ff3030;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.hero-action-button:hover {
+  background: fixed;
+  color: #fff;
+}
+@media only screen and (min-width:600px) {
+  .title{
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .subtitle{
+    font-size: 1.5rem;
+  }
+  .hero-action-button{
+    padding: 1.2rem 2.5rem;
+  }
+}
+
+@media only screen and (min-width:1000px) {
+  .title{
+    font-size: 5rem;
+    line-height: 6.5rem;
+  }
+  
+}
